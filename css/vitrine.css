@@ -1,0 +1,121 @@
+.vitrines {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1.2fr; /* Distribuição das colunas */
+    padding: 10px; /* Espaçamento interno da grid */
+}
+
+.vitrines div h1 {
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+}
+
+.produto1 {
+    background-color: #fff;
+    width: 250px;
+    height: 454px;
+    border-radius: 10px;
+    display: flex; /* Centraliza o conteúdo */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div div div div img {
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+}
+
+.nome-produto,
+.valor-de,
+.valor,
+.modo-pagamento {
+    font-family: "Poppins", sans-serif; /* Fonte comum para as classes */
+}
+
+.nome-produto {
+    color: black;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.valor-de {
+    font-weight: 400;
+    color: #909090;
+    font-size: 12px;
+    text-decoration: line-through;
+    margin-top: 10px;
+}
+
+.valor {
+    font-weight: 900;
+    color: #34CB2E;
+    font-size: 20px;
+}
+
+.modo-pagamento {
+    font-weight: 400;
+    color: #909090;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.botao-comprar {
+    margin-top: 9px;
+    width: 170px;
+    height: 45px;
+    border-radius: 5px;
+    color: black;
+    background-color: #34CB2E;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-container {
+    margin: 0 150px; /* Margens laterais */
+    position: relative;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.botao-esquerda,
+.botao-direita {
+    width: 35px; /* Largura dos botões */
+    height: 25px; /* Altura dos botões */
+    background-color: black; /* Cor de fundo dos botões */
+    border-radius: 5px; /* Bordas arredondadas */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    position: absolute; /* Para que os botões fiquem posicionados em relação ao swiper */
+    top: 50%; /* Posiciona os botões verticalmente no meio */
+    transform: translateY(-50%); /* Ajusta para centralizar completamente */
+    z-index: 10; /* Para garantir que os botões estejam acima de outros elementos */
+}
+
+.botao-esquerda {
+    left: -17px;
+   
+}
+
+.botao-direita {
+    right: -17px;
+   
+}

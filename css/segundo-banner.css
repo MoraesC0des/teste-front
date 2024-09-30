@@ -1,0 +1,14 @@
+
+.duas-imagens {
+    width: 100%; /* Define a largura do contêiner como 80% da tela */
+    display: flex;  
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    align-items: center; /* Centraliza as imagens verticalmente */
+    gap: 20px; /* Espaçamento entre as imagens */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+.duas-imagens img {
+    max-width: 38%; /* Garante que as imagens não ultrapassem o contêiner */
+    height: auto; /* Mantém a proporção das imagens */
+}
