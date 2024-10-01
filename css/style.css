@@ -128,3 +128,27 @@ p {
     /* Reduz a largura do popup */
   }
 }
+@media (max-width: 1100px) {
+  .search-input {
+    width: 100%;
+    /* A barra de pesquisa ocupa toda a largura */
+  }
+
+  .botao-buscar {
+    width: 100%;
+    /* O botão de busca ocupa toda a largura */
+  }
+
+  .vitrines h1 {
+    font-size: 1.2em;
+    /* Ajusta ainda mais o tamanho do título */
+  }
+
+  .popup {
+    width: 150px;
+    /* Reduz a largura do popup */
+  }
+  .cabecalho{
+    width: 100%;
+  }
+}

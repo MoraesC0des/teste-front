@@ -27,14 +27,9 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 2,
       spaceBetween: 15
     },
-    // Quando a tela for >= 768px (telas maiores)
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 20
-    },
     // Quando a tela for >= 1024px (telas grandes)
-    1024: {
-      slidesPerView: 4,
+    1100: {
+      slidesPerView: 2,
       spaceBetween: 20
     }
   }
@@ -67,7 +62,11 @@ $(document).ready(function () {
     },
     breakpoints: {
       // Quando a tela for >= 320px (telas pequenas)
-      320: {
+      1100: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+       320: {
         slidesPerView: 1,
         spaceBetween: 10
       },
@@ -76,16 +75,7 @@ $(document).ready(function () {
         slidesPerView: 2,
         spaceBetween: 15
       },
-      // Quando a tela for >= 768px (telas maiores)
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      },
-      // Quando a tela for >= 1024px (telas grandes)
-      1024: {
-        slidesPerView: 4,
-        spaceBetween: 20
-      }
+
     }
   });
   swiperVitrine.find('.botao-comprar').each(function () {
@@ -93,7 +83,7 @@ $(document).ready(function () {
       showModal();  // Abre o modal ao clicar em um botão "comprar"
     });
   });
-  
+
 });
 
 // Seleciona o modal e o botão de fechar
