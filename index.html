@@ -39,7 +39,7 @@
                 <img class="logo-agrada" src="assets/img/logos-agrada-1.png">
             </div>
             <div>
-                <form class="form-search">
+                <form>
                     <input type="text" class=" no-border search-input" placeholder="O que você procura?"
                         aria-label="Pesquisar">
                     <button type="submit" class=" no-border botao-buscar">Buscar</button>
@@ -50,16 +50,19 @@
                     <tr>
                         <td>
                             <div class="icon-container" id="login-icon" onclick="toggleDiv('loginDiv', this)">
-                                <img src="assets/img/ÍCONE LOGIN.svg">Faça login
+                                <img class="icon-media" src="assets/img/ÍCONE LOGIN.svg"><span>Faça login</span>
                             </div>
                         </td>
                         <td>
                             <div class="icon-container" id="atendimento-icon"
                                 onclick="toggleDiv('atendimentoDiv', this)">
-                                <img src="assets/img/ÍCONE ATENDIMENTO.svg">Atendimento
+                                <img class="icon-media" src="assets/img/ÍCONE ATENDIMENTO.svg"><span>Atendimento</span>
                             </div>
                         </td>
-                        <td> <img src="assets/img/ÍCONE CARRINHO.svg">Carrinho</td>
+                        <td>
+                            <div> <img class="icon-media" src="assets/img/ÍCONE CARRINHO.svg"><span>Carrinho</span>
+                            </div>
+                        </td>
                     </tr>
                 </table>
             </div>
@@ -70,16 +73,13 @@
         <span>ou</span>
         <button class="popup-btn" onclick="alert('Cadastrar clicado')">Cadastre-se</button>
     </div>
-
     <div class="popup" id="atendimentoDiv">
         <span>Somos os verdadeiros especialistas em <br>e-commerce</span>
         <button class="popup-btn" onclick="alert('Suporte clicado')">(51) 98027-2522</button>
     </div>
-
     <div class="fullbanner">
         <img src="assets/img/FULLBANNER.png">
     </div>
-
     <div class="vitrines">
         <div></div>
         <div>
@@ -87,9 +87,7 @@
         </div>
         <div></div>
     </div>
-
     <div class="swiper-container">
-
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -100,7 +98,6 @@
                         <h1 class="valor">R$ 1.655,90</h1>
                         <h3 class="modo-pagamento"> Ou 10x de R$179,90 sem juros</h3>
                         <button type="submit" class=" no-border botao-comprar">Comprar</button>
-
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -111,7 +108,6 @@
                         <h1 class="valor">R$ 1.655,90</h1>
                         <h3 class="modo-pagamento"> Ou 10x de R$179,90 sem juros</h3>
                         <button type="submit" class=" no-border botao-comprar">Comprar</button>
-
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -122,7 +118,6 @@
                         <h1 class="valor">R$ 1.655,90</h1>
                         <h3 class="modo-pagamento"> Ou 10x de R$179,90 sem juros</h3>
                         <button type="submit" class=" no-border botao-comprar">Comprar</button>
-
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -133,7 +128,6 @@
                         <h1 class="valor">R$ 1.655,90</h1>
                         <h3 class="modo-pagamento"> Ou 10x de R$179,90 sem juros</h3>
                         <button type="submit" class=" no-border botao-comprar">Comprar</button>
-
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -148,7 +142,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="botao-esquerda">
             <img src="assets/img/ÍCONE SETA ESQUERDA.svg" alt="Anterior" style="width: 18px; height: 15px;">
@@ -161,10 +154,8 @@
         <img src="assets/img/banner-templates.png" alt="Banner Templates">
         <img src="assets/img/banner-servicos (1).png" alt="Banner Serviços">
     </div>
-
     <footer>
         <div><img src="assets/img/logos-agrada.png"></div>
-
         <div>
             <span>
                 A Agrada conta com uma equipe de profissionais com mais de 10 anos de experiência no mercado de
@@ -181,7 +172,6 @@
             </span>
         </div>
         </div>
-
     </footer>
     <div id="modal" class="modal">
         <div class="modal-content">
@@ -196,7 +186,6 @@
     <!-- Arquivo JS customizado -->
     <script src="js/script.js"></script>
     <script src="js/modal.js"></script>
-
 </body>
 
 </html>

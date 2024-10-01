@@ -137,13 +137,29 @@ div div div div img {
 
 @media (max-width: 480px) {
     .first p {
-      font-size: 7px;
-      padding: 10px;
+        font-size: 7px;
+        padding: 10px;
     }
-    
-  .swiper-container {
-    margin: 0 0px;
-    /* Margens laterais */
-    position: relative;
-  }
-  }
+
+    .vitrines div h1 {
+        font-size: 25px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+    }
+
+    .swiper-container {
+        margin: 0 0px;
+        /* Margens laterais */
+        position: relative;
+    }
+
+    .botao-esquerda {
+        left: 0;
+
+    }
+
+    .botao-direita {
+        right: 0;
+
+    }
+}

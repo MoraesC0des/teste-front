@@ -16,7 +16,6 @@
     /* Espaçamento entre os itens, se desejado */
 }
 
-
 .grid-item {
 
     text-align: center;
@@ -33,6 +32,14 @@
     margin-left: 93px;
 }
 
+form {
+    display: flex;
+    align-items: center;
+    /* Alinha o campo de busca e o botão verticalmente */
+    justify-content: flex-start;
+    width: 100%;
+}
+
 .botao-buscar {
     margin-top: 9px;
     width: 90px;
@@ -43,6 +50,8 @@
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
+    margin-left: 5px;
+    margin-bottom: 7px;
 }
 
 .search-input {
@@ -96,28 +105,53 @@ table {
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
-    .first p {
-        font-size: 7px;
-        padding: 10px;
-    }
-}
 
 @media (max-width: 480px) {
     .logo-agrada {
         margin-left: 0px;
     }
 
+    .botao-buscar {
+        margin-top: 9px;
+        width: 45px;
+        height: 22px;
+        border-radius: 5px;
+        color: black;
+        background-color: #34CB2E;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 10px;
+
+    }
+
+
     .search-input {
         padding-left: 10px;
-        width: 109px;
+        width: 100px;
         height: 45px;
         border-radius: 5px;
         background-color: #EDEDED;
-        font-size: 10px;
+        font-size: 9px;
     }
-    td{
+
+
+    .grid-container {
+
+        height: 80px;
+    }
+
+    td {
         font-size: 10px;
         margin-top: 10px;
+    }
+
+    td img {
+        margin-top: -5px;
+        padding-right: 10px;
+    }
+
+    #atendimento-icon {
+        text-align: center;
     }
 }
