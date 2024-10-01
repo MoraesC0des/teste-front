@@ -48,14 +48,33 @@
             <div class="nav-icons">
                 <table>
                     <tr>
-                        <td> <img src="assets/img/ÍCONE LOGIN.svg">Faça login</td>
-                        <td> <img src="assets/img/ÍCONE ATENDIMENTO.svg">Atendimento</td>
+                        <td>
+                            <div class="icon-container" id="login-icon" onclick="toggleDiv('loginDiv', this)">
+                                <img src="assets/img/ÍCONE LOGIN.svg">Faça login
+                            </div>
+                        </td>
+                        <td>
+                            <div class="icon-container" id="atendimento-icon"
+                                onclick="toggleDiv('atendimentoDiv', this)">
+                                <img src="assets/img/ÍCONE ATENDIMENTO.svg">Atendimento
+                            </div>
+                        </td>
                         <td> <img src="assets/img/ÍCONE CARRINHO.svg">Carrinho</td>
                     </tr>
                 </table>
             </div>
         </div>
     </nav>
+    <div class="popup" id="loginDiv">
+        <button class="popup-btn" onclick="alert('Entrar clicado')">Faça o login</button>
+        <span>ou</span>
+        <button class="popup-btn" onclick="alert('Cadastrar clicado')">Cadastre-se</button>
+    </div>
+
+    <div class="popup" id="atendimentoDiv">
+        <span>Somos os verdadeiros especialistas em <br>e-commerce</span>
+        <button class="popup-btn" onclick="alert('Suporte clicado')">(51) 98027-2522</button>
+    </div>
 
     <div class="fullbanner">
         <img src="assets/img/FULLBANNER.png">
@@ -130,21 +149,18 @@
                 </div>
             </div>
 
-            <div class="botao-esquerda">
-                <img src="assets/img/ÍCONE SETA ESQUERDA.svg" alt="Anterior" style="width: 18px; height: 15px;">
-            </div>
-            <div class="botao-direita">
-                <img src="assets/img/ÍCONE SETA DIREITA.svg" alt="Próximo" style="width: 18px; height: 15px;">
-            </div>
-
+        </div>
+        <div class="botao-esquerda">
+            <img src="assets/img/ÍCONE SETA ESQUERDA.svg" alt="Anterior" style="width: 18px; height: 15px;">
+        </div>
+        <div class="botao-direita">
+            <img src="assets/img/ÍCONE SETA DIREITA.svg" alt="Próximo" style="width: 18px; height: 15px;">
         </div>
     </div>
-
     <div id="duas-imagens" class="duas-imagens">
         <img src="assets/img/banner-templates.png" alt="Banner Templates">
         <img src="assets/img/banner-servicos (1).png" alt="Banner Serviços">
     </div>
-
 
     <footer>
         <div><img src="assets/img/logos-agrada.png"></div>

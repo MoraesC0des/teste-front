@@ -1,18 +1,19 @@
-$(document).ready(function () {
-    // Evento de clique no botão "Comprar"
-    $('.botao-comprar').on('click', function() {
-        $('#modal').show();  // Mostra o modal
-    });
-  
-    // Evento para fechar o modal
-    $('.close').on('click', function() {
-        $('#modal').hide();  // Esconde o modal
-    });
-  
-    // Fechar o modal ao clicar fora dele
-    $(window).on('click', function(event) {
-        if ($(event.target).is('#modal')) {
-            $('#modal').hide();
-        }
-    });
-});
+
+function toggleDiv(divId, element) {
+    const div = document.getElementById(divId);
+    const otherDivId = divId === 'loginDiv' ? 'atendimentoDiv' : 'loginDiv';
+    const otherDiv = document.getElementById(otherDivId);
+
+    // Esconde a outra div
+    otherDiv.style.display = 'none';
+
+    // Calcula a posição do ícone clicado
+    const rect = element.getBoundingClientRect();
+
+    // Posiciona a div logo abaixo do ícone clicado
+    div.style.top = `${rect.bottom + window.scrollY}px`;
+    div.style.left = `${rect.left + window.scrollX}px`;
+
+    // Alterna a visibilidade da div atual
+    div.style.display = div.style.display === 'block' ? 'none' : 'block';
+}

@@ -65,3 +65,59 @@ table {
     border-collapse: collapse;
     /* Remove espaçamento entre células */
 }
+
+.icon-container {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.icon-container:hover {
+    transform: scale(1.1);
+    /* Expande o ícone ao passar o mouse */
+}
+
+.message {
+    display: none;
+    position: absolute;
+    top: 60px;
+    /* Ajuste a posição conforme necessário */
+    left: 0;
+    background-color: #f1f1f1;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container.expanded .message {
+    display: block;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .first p {
+        font-size: 7px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-agrada {
+        margin-left: 0px;
+    }
+
+    .search-input {
+        padding-left: 10px;
+        width: 109px;
+        height: 45px;
+        border-radius: 5px;
+        background-color: #EDEDED;
+        font-size: 10px;
+    }
+    td{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+}

@@ -42,8 +42,40 @@ $(document).ready(function () {
 
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
+      nextEl: '.botao-direita',
       prevEl: '.botao-esquerda',
     },
   });
 });
+
+// Seleciona o modal e o botão de fechar
+const modal = document.getElementById("modal");
+const closeModal = document.querySelector(".close");
+
+// Função para mostrar o modal
+function showModal() {
+    modal.style.display = "block"; // Mostra o modal
+}
+
+// Função para fechar o modal
+function hideModal() {
+    modal.style.display = "none"; // Fecha o modal
+}
+
+// Fecha o modal se o usuário clicar fora dele
+window.onclick = function(event) {
+    if (event.target === modal) {
+        hideModal();
+    }
+}
+
+// Adiciona evento de clique a todos os botões de comprar
+const buyButtons = document.querySelectorAll('.botao-comprar');
+buyButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        showModal();
+    });
+});
+
+// Evento para fechar o modal
+closeModal.addEventListener('click', hideModal);

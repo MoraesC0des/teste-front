@@ -1,45 +1,130 @@
 /* Global Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  /* Remove margens padrão */
+  padding: 0;
+  /* Remove qualquer padding padrão */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #F1F1F1 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.cabecalho {
+  background-color: black;
+  width: 100%;
+  height: 30px;
+
+  display: flex;
+  /* Ativa o flexbox */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+}
+
+p {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  letter-spacing: 4.8px;
+  color: #FFFFFF;
+  opacity: 1;
+  margin: 0;
+  font-size: 12px;
+  /* Remove qualquer margem padrão do parágrafo */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .first p {
+    font-size: 7px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .first p {
+    font-size: 7px;
+    padding: 10px;
   }
   
-  body,
-  html {
-    margin: 0;
-    /* Remove margens padrão */
-    padding: 0;
-    /* Remove qualquer padding padrão */
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #F1F1F1 0% 0% no-repeat padding-box;
-    opacity: 1;
+.swiper-container {
+  margin: 0 0px;
+  /* Margens laterais */
+  position: relative;
+}
+}
+
+
+
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
   }
-  
-  .cabecalho {
-    background-color: black;
-    width: 100%;
-    height: 30px;
-  
-    display: flex;
-    /* Ativa o flexbox */
-    justify-content: center;
-    /* Centraliza horizontalmente */
-    align-items: center;
-    /* Centraliza verticalmente */
+
+  .logo-agrada {
+    width: 80px;
+    /* Reduz a largura do logo */
   }
-  
-  p {
+
+  .search-input {
+    width: 70%;
+    /* Reduz o tamanho da barra de pesquisa */
+  }
+
+  .vitrines h1 {
+    font-size: 1.5em;
+    /* Ajusta o tamanho do título */
+  }
+
+  footer {
+    grid-template-columns: 1fr;
     text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    letter-spacing: 4.8px;
-    color: #FFFFFF;
-    opacity: 1;
-    margin: 0;
-    font-size: 12px;
-    /* Remove qualquer margem padrão do parágrafo */
   }
+
+  footer img {
+    margin: 0 auto;
+    /* Centraliza a imagem no footer */
+  }
+
+  .modal-content {
+    width: 90%;
+    /* Modal ocupa 90% da largura na tela pequena */
+  }
+}
+
+@media (max-width: 480px) {
+  .search-input {
+    width: 100%;
+    /* A barra de pesquisa ocupa toda a largura */
+  }
+
+  .botao-buscar {
+    width: 100%;
+    /* O botão de busca ocupa toda a largura */
+  }
+
+  .vitrines h1 {
+    font-size: 1.2em;
+    /* Ajusta ainda mais o tamanho do título */
+  }
+
+  .popup {
+    width: 150px;
+    /* Reduz a largura do popup */
+  }
+}
